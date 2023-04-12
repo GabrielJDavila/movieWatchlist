@@ -1,0 +1,180 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+div#main-container {
+    position: relative;
+}
+
+header#header{
+    height: 6rem;
+    padding: 2.5rem 2rem;
+    background: black url("/images/movie-background.png") no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+header > h1 {
+    margin: 0;
+    color: white;
+}
+
+header > a {
+    color: white;
+    text-decoration: none;
+}
+
+header > a:hover {
+    background: white;
+    border-radius: 4px;
+    color: lightskyblue;
+    padding: 4px;
+    transition: .5s ease;
+}
+
+div#search-container {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 38px;
+    left: 0;
+    right: 0;
+    top: 155px;
+    margin: 0 auto;
+}
+
+div>input {
+    border: 1px solid lightgray;
+    border-radius: 4px 0 0 4px;
+    padding: .5rem;
+    width: 70%;
+}
+
+div>button {
+    border: 1px solid lightgray;
+    border-radius: 0 4px 4px 0;
+    padding: .5rem;
+    width: 100px;
+}
+
+div#placeholder-container {
+    width: 87%;
+    margin: 10rem auto;
+    text-align: center;
+}
+
+.placeholder-text {
+    color: lightgrey;
+}
+
+main#rendered-container {
+    border: 1px solid black;
+    width: 87%;
+    margin: 5rem auto 0 auto;
+}
+
+#rendered-content-container {
+    margin: 3rem auto;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+}
+
+.rendered-item-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: 2px solid lightgrey;
+    padding: 2.5rem 0;
+}
+
+.item-info-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    width: 80%;
+    text-align: left;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: row;
+    align-items: cetner;
+    align-content: center;
+    justify-items: center;
+}
+
+.movie-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.poster {
+    height: 200px;
+    border-radius: 4px;
+}
+
+.rating {
+    margin: auto 0 auto 1rem;
+    font-size: 13px;
+}
+
+.bottom-info>p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.runtime,
+.genre {
+    margin-right: 1rem;
+    font-size: 13px;
+}
+
+.fa-circle-plus {
+    width: 1.2rem;
+    cursor: pointer;
+}
+
+.watchlist {
+    font-size: 13px;
+    padding: 0px;
+    border: none;
+    background: white;
+    width: 5rem;
+    cursor: pointer;
+}
+
+.plot {
+    color: grey;
+}
+
+.hide {
+    display: none;
+}
+
+/* Specific watchlist.html styles */
+
+#placeholder-watchlist-container {
+    margin-top: 9rem;
+}
+
+#search-shortcut {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#rendered-watchlist-container {
+    margin: 3rem auto;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+}
