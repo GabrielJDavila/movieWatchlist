@@ -43,7 +43,7 @@ async function addToWatchlist(id) {
     // - Hides the starting html container
     // - declares variable equal to search input value
     // - fetch request to call api with input value
-    // _ for each movie object returned in data.Search array, called render function on each of them.
+    // - for each movie object returned in data.Search array, called render function on each of them.
 function search() {
     toggleHide()
     let inputValue = searchField.value
